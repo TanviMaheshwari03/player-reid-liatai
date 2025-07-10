@@ -14,5 +14,25 @@ This project tracks and re-identifies players in a sports video, ensuring consis
 
 Or, for local runs:
 
-```bash
-pip install ultralytics opencv-python numpy matplotlib
+
+📂 File Structure
+main.ipynb: End-to-end Colab notebook with all steps
+
+tracker.py: Custom tracker using IoU + centroid logic
+
+yolov11.pt: Pretrained model for player detection
+
+output_reid.mp4: Final result with consistent IDs
+
+report.md: Approach + methodology + insights
+
+🔍 Sample Output
+
+<img width="515" height="321" alt="image" src="https://github.com/user-attachments/assets/9fa91110-ef65-4fdc-b4c3-ecb488c6cba8" />
+
+📊 Key Features
+✅ YOLOv11-based player detection
+✅ Custom ID tracker with IoU + centroid matching
+✅ Robust to short occlusions and re-entries
+✅ 100% portable — runs in Colab
+
